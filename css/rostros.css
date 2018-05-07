@@ -7,6 +7,7 @@ body
 	font-family: 'Dancing Script';
 	display: block;
 	margin:0 auto;
+	animation: AnimaAbajoArriba 1s;
 }
 #contenido
 {
@@ -39,7 +40,7 @@ nav .enlace
 }
 
 
-div .contenedorP
+div .contenedorP, div .contenedorB
 {
 	padding: 3% 3% 2% 3%;
 	text-align: center;
@@ -49,13 +50,13 @@ div .contenedorP
 	flex-direction: column;
 	background-color: #D5C75F;
 }
-.contenedorP
+.contenedorP , .contenedorB
 {	box-sizing: border-box;
 	display: flex;
 	flex-direction: row;
 }
 
-.contenedorP > div
+.contenedorP > div, .contenedorB > div
  {
 	text-align: center;
 	padding: 10px;
@@ -67,13 +68,6 @@ img[src$=".jpg"]
 	border: 2px solid Black;
   width: 250px;
 }
-
-
-
-
-
-
-
 footer
 { height:110px;
 	column-count: 4;
@@ -91,3 +85,36 @@ footer > h2
 	-webkit-margin-after:0.1em;
 }
 p{-webkit-margin-before:0;}
+#imag1 img
+{
+	-webkit-filter:blur(10px);
+	filter: blur(10px);
+}
+.contenedorP div:nth-child(even)
+{
+	-webkit-filter:grayscale(100%);
+	filter: grayscale(100%);
+}
+#imag3 img
+{
+	-webkit-filter:sepia(90%);
+	filter: sepia(90%);
+}
+.contenedorB div:nth-child(odd)
+{
+	-webkit-filter:grayscale(100%);
+	filter: grayscale(100%);
+}
+@keyframes AnimaAbajoArriba
+{
+  0%	{
+    		margin-top:150%;
+  		}
+  60%	{
+    		margin-top:-15%;
+  		}
+
+	100%{
+    		margin-top:0%;
+  		}
+}
