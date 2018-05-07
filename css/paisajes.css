@@ -44,7 +44,8 @@ div .contenedorP, div .contenedorB
 	text-align: center;
 }
 
-#contenido {
+#contenido
+{
 	display: flex;
 	flex-direction: column;
 	background-color: #D5C75F;
@@ -56,7 +57,7 @@ div .contenedorP, div .contenedorB
 }
 
 .contenedorP > div, .contenedorB> div
- {
+{
 	text-align: center;
 	padding: 10px;
 	margin: 10px;
@@ -117,4 +118,43 @@ p{-webkit-margin-before:0;}
 	100%{
     		margin-top:0%;
   		}
+}
+@media screen and (max-width: 900px)
+{
+	h1
+		{ display: block;
+			text-align:center;
+		}
+	nav
+		{
+			text-align: center;
+		}
+	.contenedorP, .contenedorB
+		{
+			display: flex;
+			flex-direction: column;
+		}
+
+.contenedorP div , .contenedorB div
+	{
+			width: 100%;
+		}
+
+img[src$=".jpg"]
+		{
+			width: 90%;
+		}
+footer
+		{
+				column-count: 1;
+				height:80%;
+				font-size:200%;
+				padding:5%;
+		}
+img[src$="svg"],img[src$="png"]
+		{
+			width:5%;
+			height:3%;
+		}
+
 }

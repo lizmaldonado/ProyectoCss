@@ -74,7 +74,6 @@ div .contenedor
 	width:90%;
 	-webkit-filter:drop-shadow(2px 2px 2px #02010A);
 	filter: drop-shadow(2px 2px 2px #02010A);
-
 }
 @-webkit-keyframes sombraanimada
 {
@@ -90,7 +89,6 @@ div .contenedor
 	transition: rotate, 1s;
 	-webkit-filter:drop-shadow(2px 2px 2px #02010A);
 	filter: drop-shadow(2px 2px 2px #02010A);
-
 }
 #imagen3 img:hover
 {	animation: sombraanimada 1s;
@@ -125,7 +123,7 @@ footer
 { height:110px;
 	column-count: 4;
 	column-gap: normal;
-	column-fill: auto;
+
 	background-color: #C6D5C5;
 	border-radius: 0 0 10px 10px;
 	color: black;
@@ -151,34 +149,40 @@ p{-webkit-margin-before:0;}
     		margin-top:0%;
   		}
 }
-@media  (max-width: 900px)
+@media screen and (max-width: 900px)
 {
-
-	header
-		{width: 100%;
-			margin: 0 auto;}
 	h1
-		{display: block;
-			text-align:center;}
-	nav{text-align: center;}
-
+		{
+			display: block;
+			text-align:center;
+		}
+	nav
+		{
+			text-align: center;
+		}
 	.contenedor
-			{column-count: 1;}
+		{
+				column-count: 1;
+		}
 	#imagen3 img, #imagen4 img
-			{
+		{
 				margin-top: 2%;
 				height: 40%;
 				width:90%;
-			}
+		}
+	div .enlace2, a.enlace, h1
+		{
+					font-size:230%;
+		}
 	footer
-			{
+		{
 				column-count: 1;
-				height:65vh;
-				font-size:300%;
+				height:80%;
+				font-size:200%;
 				padding:5%;
-			}
-	img[src$="svg"]
-			{width:8%;height:3%;}
-img[src$="png"]
-			{width:5%;height:3%;}
+		}
+	img[src$="svg"], img[src$="png"]
+		{
+			 	width:5%;height:3%;
+		}
 }
