@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+body
+{
+	max-width: 900px;
+	background-color: black;
+	color: white;
+	font-family: 'Dancing Script';
+	display: block;
+	margin:0 auto;
+}
+#contenido
+{
+	display: flex;
+	flex-direction: column;
+}
+header
+{
+  padding:10px 10px 10px 20px;
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0;
+}
+h1
+{
+	text-shadow: 2px 4px #02010A;
+	display:inline;
+	text-align: left;
+}
+a[href="paisajes.html"]
+{
+	text-decoration: none;
+}
+nav{text-align: right;}
+nav .enlace
+{
+	color:white;
+	padding-left:20px;
+	font-size: 25px;
+	padding-bottom: 10px;
+}
+
+
+div .contenedorP
+{
+	padding: 3% 3% 2% 3%;
+	text-align: center;
+}
+#contenido {
+	display: flex;
+	flex-direction: column;
+	background-color: #D5C75F;
+}
+.contenedorP
+{	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+}
+
+.contenedorP > div
+ {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 28%;
+}
+img[src$=".jpg"]
+{
+	border: 2px solid Black;
+  width: 250px;
+}
+
+
+
+
+
+
+
+footer
+{ height:110px;
+	column-count: 4;
+	column-gap: normal;
+	column-fill: auto;
+	background-color: #C6D5C5;
+	border-radius: 0 0 10px 10px;
+	color: black;
+	margin-bottom: 5px;
+	padding: 10px 10px 10px 20px;
+}
+footer > h2
+{
+	-webkit-margin-before:0;
+	-webkit-margin-after:0.1em;
+}
+p{-webkit-margin-before:0;}

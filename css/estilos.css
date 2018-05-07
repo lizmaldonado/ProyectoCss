@@ -28,12 +28,11 @@ h1
 a[href="index.html"]
 {
 	text-decoration: none;
-
 }
 nav{text-align: right;}
 nav .enlace
-{ color:white;
-
+{
+	color:white;
 	padding-left:20px;
 	font-size: 25px;
 	padding-bottom: 10px;
@@ -46,7 +45,7 @@ nav .enlace
 }
 div .contenedor1
 {
-height: auto;
+
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -59,10 +58,9 @@ div .contenedor
 }
 .contenedor
 {
-	column-count: 2;
-
 
 	background-color: #D5C75F;
+	column-count: 2;
 }
 #imagen1
 {
@@ -73,50 +71,47 @@ div .contenedor
 #imagen1 img
 {
 	width:90%;
-	height:
+	-webkit-filter:drop-shadow(2px 2px 2px #02010A);
+	filter: drop-shadow(2px 2px 2px #02010A);
 
+}
+@-webkit-keyframes sombraanimada
+{
+  from { box-shadow: 2px 2px #02010a;}
+  to{box-shadow: 2px 2px #82c3a6;}
 }
 #imagen3 img
 {
+	margin-top: 20px;
 	height:200px;
 	width:370px;
-	border: 1px solid black;
-	box-shadow: 2px 2px #82C3A6;
+	transform: rotate(none);
+	transition: rotate, 1s;
+	-webkit-filter:drop-shadow(2px 2px 2px #02010A);
+	filter: drop-shadow(2px 2px 2px #02010A);
 
 }
 #imagen3 img:hover
-{
- transform: rotate(10deg);
- border:2px solid black;
-
+{	animation: sombraanimada 1s;
+	transform: rotate(10deg);
+ 	animation-fill-mode: forwards;
 }
 #imagen4 img
 {
+	margin-top: 20px;
 	height:200px;
 	width:370px;
-	border: 1px solid black;
-	box-shadow: 2px 2px #82C3A6;
+	-webkit-filter:drop-shadow(2px 2px 2px #02010A);
+	filter: drop-shadow(2px 2px 2px #02010A);
+	transform: translate(0, 0);
+	transition: traslate, 1s;
+}
 
-}
-@-webkit-keyframes movimiento
-{
-	0% {
-		position: relative;
-		left:10px;
-		bottom:3px;}
-	50% {
-		position: relative;
-		left: 20px;
-		bottom:5px;}
-	100% {
-		position: relative;
-		left: 0px;
-		bottom: :0px;}
-}
 #imagen4 img:hover
 {
-animation: movimiento 1s;
- border:2px solid black;
+	transform: translate(20px, -5px);
+	animation: sombraanimada 1s;
+	animation-fill-mode: forwards;
 }
 
 div .enlace2
@@ -126,14 +121,15 @@ div .enlace2
 	color:black;
 }
 footer
-{ column-count: 4;
+{ height:110px;
+	column-count: 4;
 	column-gap: normal;
 	column-fill: auto;
 	background-color: #C6D5C5;
 	border-radius: 0 0 10px 10px;
 	color: black;
-	height: 100px;
-	padding: 10px;
+	margin-bottom: 5px;
+	padding: 10px 10px 10px 20px;
 }
 footer > h2
 {
